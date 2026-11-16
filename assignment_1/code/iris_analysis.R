@@ -35,6 +35,12 @@ iris_summary <- iris %>%
     .groups = "drop"
   )
 
+write.csv(
+  iris_summary,
+  "assignment_1/results/iris_summary.csv",
+  row.names = FALSE
+)
+
 # Display and save the summary table
 print(iris_summary)
 
